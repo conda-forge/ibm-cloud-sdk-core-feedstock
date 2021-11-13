@@ -1,5 +1,5 @@
 {% set name = "ibm-cloud-sdk-core" %}
-{% set version = "3.1.0" %}
+{% set version = "3.13.0" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 3221fcbae81e5dae1f072f8b7dc7c0e1c15f6fe824cd13e2a75749065cd08431
+  sha256: b27aec03e8c666b3e36c68b2331871f37a0c6c0467fe0f73462fda7300d3c19f
 
 build:
   number: 0
@@ -18,17 +18,22 @@ build:
 requirements:
   host:
     - pip
-    - python
+    - pytest
+    - python >=3.6
   run:
-    - pyjwt >=1.7.1
-    - python
-    - python-dateutil >=2.5.3
-    - requests >=2.0,<3.0
+    - pyjwt <3.0.0,>=2.0.1
+    - python >=3.6
+    - python-dateutil <3.0.0,>=2.5.3
+    - requests <3.0,>=2.20
 
 test:
   imports:
     - ibm_cloud_sdk_core
     - ibm_cloud_sdk_core.authenticators
+  commands:
+    - pip check
+  requires:
+    - pip
 
 about:
   home: https://github.com/IBM/python-sdk-core
@@ -39,3 +44,4 @@ about:
 extra:
   recipe-maintainers:
     - synapticarbors
+    - BastianZim
