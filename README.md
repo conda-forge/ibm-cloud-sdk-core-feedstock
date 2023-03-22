@@ -1,11 +1,11 @@
-About ibm-cloud-sdk-core
-========================
+About ibm-cloud-sdk-core-feedstock
+==================================
+
+Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/ibm-cloud-sdk-core-feedstock/blob/main/LICENSE.txt)
 
 Home: https://github.com/IBM/python-sdk-core
 
 Package license: Apache-2.0
-
-Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/ibm-cloud-sdk-core-feedstock/blob/main/LICENSE.txt)
 
 Summary: Core library used by SDKs for IBM Cloud Services
 
