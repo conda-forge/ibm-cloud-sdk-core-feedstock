@@ -1,5 +1,5 @@
 {% set name = "ibm-cloud-sdk-core" %}
-{% set version = "3.16.3" %}
+{% set version = "3.16.4" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: 6048dc41306329adff638d7d1f23aeb3a88b1d081d32fc3b4b6ef624f8881e52
+  sha256: 2f94ed9cc9b1a438c82b18128430e55aca216cc5dd6c97b2e9e2bd4b58dc0ff0
 
 build:
   number: 0
@@ -24,7 +24,7 @@ requirements:
     - pyjwt <3.0.0,>=2.4.0
     - python >=3.7
     - python-dateutil <3.0.0,>=2.5.3
-    - requests <3.0.0,>=2.26.0
+    - requests <3.0.0,>=2.28.2
     - urllib3 <2.0.0,>=1.26.0
 
 test:
