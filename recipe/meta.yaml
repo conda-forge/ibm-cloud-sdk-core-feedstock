@@ -1,5 +1,5 @@
 {% set name = "ibm-cloud-sdk-core" %}
-{% set version = "3.17.1" %}
+{% set version = "3.17.2" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name }}-{{ version }}.tar.gz
-  sha256: ec56b078217267764a295541d50b7f029e2cf1c288b0925e1b3cffa073e7cdeb
+  sha256: 948a541bf67ca557509d206f5b2680c5f0718724100c12914a2ff3af7aad495d
 
 build:
   number: 0
