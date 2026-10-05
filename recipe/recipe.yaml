@@ -2,7 +2,7 @@ schema_version: 1
 
 context:
   name: ibm-cloud-sdk-core
-  version: "3.27.0"
+  version: "3.27.1"
 
 package:
   name: ${{ name|lower }}
@@ -10,7 +10,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name | replace('-', '_') }}-${{ version }}.tar.gz
-  sha256: a24d443ee3f799027b22c503492c05f06f0d03ccf0350c72b6c5ebfd0198cc26
+  sha256: cdfb50e29ef011d0aede3bcfe8308be470af60ecbaa80cf069baa701d3e1d4a7
 
 build:
   number: 0
